@@ -1,6 +1,7 @@
 package thread;
 
 import java.awt.*;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
@@ -29,5 +30,13 @@ public class Main {
         }
         t1.start();
 
+    }
+}
+
+class  Practice44{
+    public static void main(String[] args) {
+        Scanner sc  = new Scanner(System.in);
+        int c =(int) sc.next().charAt(0);
+        System.out.println(c);
     }
 }
