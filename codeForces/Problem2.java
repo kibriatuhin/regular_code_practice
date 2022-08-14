@@ -31,3 +31,23 @@ public class Problem2 {
         }
     }
 }
+
+
+
+class DbService{
+    //methods
+    public void save(){
+        System.out.println("save");
+    }
+}
+
+class Main{
+    private  DbService dbService;
+    public static void main(String[] args) {
+        Main ob = new Main();
+        ob.operation();
+    }
+    public void operation(){
+        dbService.save();
+    }
+}

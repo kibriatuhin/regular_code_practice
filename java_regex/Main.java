@@ -11,7 +11,7 @@ public class Main {
         boolean flag ;
         Scanner sc = new Scanner(System.in);
         do {
-            String digit = "\\w{3,10}@gmail.com";
+            String digit = "abdc";
             System.out.println("Input an Integer = " );
             String input = sc.next();
             flag = input.matches(digit);

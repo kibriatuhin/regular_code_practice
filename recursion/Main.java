@@ -1,6 +1,6 @@
 package recursion;
 
-import java.util.Arrays;
+import java.math.BigInteger;
 
 public class Main {
     static void  solve(int m){
@@ -19,17 +19,15 @@ public class Main {
 }
 
 class Fact{
-    static int fact(int n){
-        if (n==0){
-            return 1;
-        }
-        System.out.println(n);
-        return n * fact(n-1);
-
+    public static BigInteger factorial(BigInteger n) {
+        if (n.equals(BigInteger.ZERO))
+            return BigInteger.ONE;
+        else
+            return n.multiply(factorial(n.subtract(BigInteger.ONE)));
     }
 
     public static void main(String[] args) {
-        System.out.println(fact(5));
+        System.out.print(factorial(new BigInteger("100000")));
     }
 }
 
@@ -90,8 +88,8 @@ class  Mainnn extends outer{
      }
 
     public static void main(String[] args) {
-        outer ob = new Mainnn();
-        ob.m();
+        BigInteger ob = BigInteger.ONE;
+        System.out.println(ob.intValue());
     }
 }
 
