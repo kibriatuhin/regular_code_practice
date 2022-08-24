@@ -30,25 +30,33 @@ class A{
     }
 }
 
-class Student{
-    int id;
-    String name;
-    float cgpa;
+final class Student{
+    private final int id;
+    private final String name;
+    private final float cgpa;
+
+    public int getId() {
+        return id;
+    }
+
+
+
+    public String getName() {
+        return name;
+    }
+
+
+
+    public float getCgpa() {
+        return cgpa;
+    }
+
+
 
     public Student(int id, String name  , float cgpa){
         this.id = id;
         this.name = name;
         this.cgpa = cgpa;
-    }
-
-    @Override
-    public int hashCode() {
-        return this.id;
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        return this.id == ((Student)obj).id;
     }
 
     @Override
@@ -63,6 +71,8 @@ class Student{
 
 class Test{
     public static void main(String[] args) {
-
+       String s1 = "hello";
+       String s2 = new String("hello");
+        System.out.println(s1==s2);
     }
 }
