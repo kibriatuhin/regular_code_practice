@@ -1,9 +1,6 @@
 import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.PriorityQueue;
-import java.util.TreeSet;
+import java.util.*;
 import java.util.function.BiFunction;
 import java.util.function.Function;
 import java.util.function.Predicate;
@@ -71,8 +68,58 @@ final class Student{
 
 class Test{
     public static void main(String[] args) {
-       String s1 = "hello";
-       String s2 = new String("hello");
-        System.out.println(s1==s2);
+
+        ABC ob = new CDE(1);
     }
 }
+
+class ABC{
+    static {
+        System.out.println("Static block of ABC");
+    }
+    public ABC(){
+        System.out.println("No argument constructor of ABC");
+    }
+    public ABC(int n){
+        System.out.println("Parameterized constructor of ABC " );
+    }
+}
+
+class CDE extends ABC{
+    static {
+        System.out.println("Static block of CDE");
+    }
+    public CDE(){
+        System.out.println("No argument Constructor of CDE ");
+    }
+    public CDE(int n){
+        System.out.println("Parameterized constructor of CDE");
+    }
+}
+
+
+class Testtt{
+   void m2(Testtt obj){
+       System.out.println("method call successfully done");
+       m3();
+   }
+   void m3(){
+       System.out.println("amar kaj nai kono ");
+   }
+   void m1(){
+       m2(this);
+   }
+    public static void main(String[] args) {
+        Testtt obj = new Testtt();
+        obj.m1();
+    }
+}
+
+class B{
+
+}
+class A4{
+
+}
+
+
