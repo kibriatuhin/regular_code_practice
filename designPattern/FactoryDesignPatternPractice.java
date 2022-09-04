@@ -35,9 +35,9 @@ class Laptop implements Device{
 
 class DeviceFactory{
     public static Device create(Type type){
-        if (type.equals(Type.PHONE)){
+        if (type ==Type.PHONE){
             return new Phone();
-        }else if (type.equals(Type.LAPTOP)){
+        }else if (type==Type.LAPTOP){
             return new Laptop();
         }
         return null;

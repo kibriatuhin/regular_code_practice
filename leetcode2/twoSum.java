@@ -1,5 +1,8 @@
 package leetcode2;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class twoSum {
     static void   twoSum(int[] nums , int target){
         //int[] array = new int[2];
@@ -13,5 +16,11 @@ public class twoSum {
     public static void main(String[] args) {
         int[] array = {1,2,4,5,8};
         twoSum(array,7);
+    }
+}
+
+class Practice{
+    static void   twoSum(int[] nums , int target){
+
     }
 }

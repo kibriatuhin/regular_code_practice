@@ -123,3 +123,20 @@ class A4{
 }
 
 
+class Recursion{
+    static void print(int n ){
+        //base case
+        if (n==11){
+            return;
+        }
+        System.out.println(n);
+        print(n+1);
+        System.out.println(n);
+    }
+
+    public static void main(String[] args) {
+        print(1);
+    }
+}
+
+
