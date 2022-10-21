@@ -91,3 +91,48 @@ class Test44{
         System.out.println(Arrays.toString(array));
     }
 }
+
+class Encapsulation{
+    private int n;
+
+    public static void main(String[] args) {
+
+    }
+}
+
+interface P{
+    void show();
+
+}
+interface Q{
+    void show();
+}
+class PQ implements P,Q{
+
+    @Override
+    public void show() {
+        System.out.println("tuhin");
+    }
+
+    public static void main(String[] args) {
+        PQ ob = new PQ();
+        ob.show();
+    }
+}
+
+class Parent5{
+    int a=10;
+
+}
+class Child5 extends Parent5{
+    int a = 100;
+
+}
+class Test555{
+    public static void main(String[] args) {
+        Parent5 a = new Parent5();
+        Child5 b = new Child5();
+        b = (Child5) a;
+        System.out.println(b.a);
+    }
+}

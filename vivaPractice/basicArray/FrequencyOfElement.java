@@ -1,5 +1,6 @@
 package vivaPractice.basicArray;
 
+import java.io.FilterOutputStream;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -48,5 +49,42 @@ class CountFrequency{
 
     public static void main(String[] args) {
         countFreq(new int[]{1,2,2,3,4,1,3});
+    }
+}
+
+class Student{
+    public void getAddress(){
+        System.out.println("address");
+    }
+}
+class StudentTest{
+    public static void main(String[] args) {
+        Student ob = new Student(){
+          @Override
+          public void getAddress(){
+              System.out.println("annonymous inner class address");
+          }
+        };
+
+        ob.getAddress();
+    }
+}
+
+
+class MyRunnableTest{
+    public static void main(String[] args) {
+
+        Thread t1 = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                for (int i=0 ;i<5 ; i++){
+                    System.out.println(i);
+                }
+            }
+        });
+        t1.start();
+        for (int i=0 ;i< 10 ; i++){
+            System.out.println(i);
+        }
     }
 }

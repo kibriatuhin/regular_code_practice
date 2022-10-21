@@ -75,15 +75,7 @@ class LinkList{
 
 
     public static void main(String[] args) {
-        LinkList list = new LinkList();
-        list.addFirst(4);
-        list.addFirst(3);
-        list.addFirst(2);
-        list.addFirst(1);
-        list.printList();
-        list.head =   list.reverseRecursion(list.head);
-        System.out.println();
-        list.printList();
+
 
 
     }

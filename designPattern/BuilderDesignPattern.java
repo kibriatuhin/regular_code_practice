@@ -75,8 +75,8 @@ class StudentNew{
 public class BuilderDesignPattern {
     public static void main(String[] args) {
         StudentNew.Builder ob = new StudentNew.Builder();
-        ob.dept("ICT").university("MBSTU").build();
-        System.out.println(ob);
+      StudentNew ob1 =  ob.dept("ICT").university("MBSTU").build();
+        System.out.println(ob1);
 
     }
 }

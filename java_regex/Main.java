@@ -8,20 +8,12 @@ import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
-        boolean flag ;
-        Scanner sc = new Scanner(System.in);
-        do {
-            String digit = "abdc";
-            System.out.println("Input an Integer = " );
-            String input = sc.next();
-            flag = input.matches(digit);
-            if (!flag)
-                System.out.println("Invalid!");
-            else {
-                System.out.println("valid ");
-            }
+        int x=3,y=20;
+        x = (x & y) + (x/y);
+        y = x & (~y) + 1;
+        x=x & (~y) +1;
+        System.out.println(x + " " + y);
 
-        }while (!flag);
     }
 }
 
